@@ -1,0 +1,162 @@
+.pagina {
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
+}
+
+.cabecalho {
+  padding: 24px 40px;
+  border-bottom: 1px solid var(--border);
+}
+
+.conteudo {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 32px;
+  padding: 32px 40px;
+  align-items: start;
+  flex: 1;
+}
+
+.formulario {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+  color: var(--text);
+}
+
+.campo input {
+  font: inherit;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text-h);
+}
+
+.campo input:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+.formulario__acoes {
+  display: flex;
+  gap: 8px;
+}
+
+.formulario__erro {
+  color: #d1435b;
+  font-size: 14px;
+}
+
+.botao {
+  font: inherit;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 9px 14px;
+  cursor: pointer;
+}
+
+.botao--primario {
+  background: var(--accent);
+  color: white;
+  flex: 1;
+}
+
+.botao--primario:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.botao--ghost {
+  background: var(--accent-bg);
+  color: var(--accent);
+  border-color: var(--accent-border);
+}
+
+.botao--perigo {
+  background: transparent;
+  color: #030303;
+  border-color: rgba(74, 71, 71, 0.4);
+}
+
+.area-lista {
+  min-height: 200px;
+}
+
+.lista {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 12px;
+}
+
+.cartao {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cartao--feita .cartao__titulo {
+  text-decoration: line-through;
+}
+
+.cartao__rodape {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.cartao__badge {
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--code-bg);
+  color: var(--text);
+}
+
+.cartao__acoes {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.cartao__acoes .botao {
+  padding: 6px 10px;
+  font-size: 13px;
+}
+
+.estado {
+  padding: 40px 20px;
+  text-align: center;
+  border: 1px dashed var(--border);
+  border-radius: 12px;
+  color: var(--text);
+}
+
+.estado--erro {
+  border-color: rgba(209, 67, 91, 0.4);
+  color: #d1435b;
+}
+
+.estado__detalhe {
+  font-size: 13px;
+  margin-top: 6px;
+  opacity: 0.8;
+}
