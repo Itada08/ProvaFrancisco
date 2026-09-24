@@ -15,5 +15,4 @@ Depois, abra no navegador o endereço mostrado no terminal (por padrão, `http:/
 
 `https://jsonplaceholder.typicode.com/todos`
 # ProvaFrancisco
-# ProvaFrancisco
-# ProvaFrancisco
+
